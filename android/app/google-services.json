@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030837079701",
+    "firebase_url": "https://flash-chat-59bf4.firebaseio.com",
+    "project_id": "flash-chat-59bf4",
+    "storage_bucket": "flash-chat-59bf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030837079701:android:f37c1dd1a599e80900959c",
+        "android_client_info": {
+          "package_name": "co.zigoval.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030837079701-nnrdqdg603124dnmfto1hc2559481rt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz3-R3_0SFBH_LKMTpsjmvjzKJYxFLrBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030837079701-nnrdqdg603124dnmfto1hc2559481rt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
