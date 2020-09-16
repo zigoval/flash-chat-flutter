@@ -68,32 +68,34 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 24.0,
               ),
-              Hero(
-                  tag: "login",
-                  child: RoundedButton(
-                    title: 'Log In',
-                    color: Colors.lightBlueAccent,
-                    onPressed: () async {
-                      setState(() {
-                        _loading = true;
-                      });
-                      try {
-                        final user = await _auth.signInWithEmailAndPassword(
-                            email: email, password: password);
-                        if (user != null) {
-                          Navigator.pushNamed(context, ChatScreen.id);
+              Flexible(
+                child: Hero(
+                    tag: "login",
+                    child: RoundedButton(
+                      title: 'Log In',
+                      color: Colors.lightBlueAccent,
+                      onPressed: () async {
+                        setState(() {
+                          _loading = true;
+                        });
+                        try {
+                          final user = await _auth.signInWithEmailAndPassword(
+                              email: email, password: password);
+                          if (user != null) {
+                            Navigator.pushNamed(context, ChatScreen.id);
+                          }
+                          setState(() {
+                            _loading = false;
+                          });
+                        } catch (e) {
+                          setState(() {
+                            _loading = false;
+                          });
+                          print(e);
                         }
-                        setState(() {
-                          _loading = false;
-                        });
-                      } catch (e) {
-                        setState(() {
-                          _loading = false;
-                        });
-                        print(e);
-                      }
-                    },
-                  )),
+                      },
+                    )),
+              ),
             ],
           ),
         ),
